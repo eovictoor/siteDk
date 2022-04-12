@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/loginIndex.css">
+    <script src="js/loginIndex.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a id="navtransity0" href="#">DK FreeSort</a></li>
+            <li><a  id="navtransity1" href="#">FAQ</a></li>
+            <li><a  id="navtransity2" href="#">Entrar/Registrar</a></li>
+        </ul>
+    </nav>
+    <div class="central">
+        <div id="painel">
+            <div id="painel0">
+                <blockquote id="bloco0">
+                    <h3>Você está realizando o registro!</h3>
+                    <p>
+                        Preencha corretamente os dados, é de extrema importância sua colaboração.
+                    </p>
+                    <img src="imagem/seta2.png" onclick="loginPanel()" id="rowlogin" alt="seta esquerda">
+                </blockquote>
+            </div>
+            <div id="separate">
+                <blockquote id="bloco1">
+                    <img src="imagem/logo.png" alt="usuario"><br>
+                    <input type="text" id="usernamelogin" placeholder="Nome">
+                    <input type="password" id="passwordlogin" placeholder="Senha"><br>
+                    <button id="entrarlogin">Entrar</button>
+                    <p id="registrobutton">Não tem uma conta?</p>
+                </blockquote>
+            </div>
+            <div id="painel2">
+                <blockquote id="bloco2">
+                    <h3>Faça o seu registro agora!</h3>
+                    <p>Nos somos uma empresa de alta confidencialidade, assim, proporcionando mais segurança no momento em que efetuar o registro.</p>
+                    <img src="imagem/seta.png" alt="seta para a direita" onclick="registerPanel()" id="rowregister">
+                </blockquote>
+            </div>
+            <div id="painel3">
+                <blockquote id="bloco3">
+                    <h3 id="titleregister">Registre-se aqui</h3>
+                    <input type="text" id="usernameregister" placeholder="Nome completo">
+                    <input type="email" id="emailregister" placeholder="Email">
+                    <input type="text" id="cpfregister" placeholder="CPF" onblur="formataCPF(this)">
+                    <input type="text" id="cepregister" placeholder="CEP" onblur="formataCep(this)">
+                    <input type="text" id="enderegister" placeholder="Endereço">
+                    <input type="password" id="passwordregister" placeholder="Senha">
+                    <input type="password" id="passwordverify" placeholder="Confirme sua senha"><br>
+                    <h3 id="alert001">Comprovante de Residência</h3>
+                    <button id="styleresidencia">Selecionar imagem</button> 
+                    <input type="file" id="imageresidencia">
+                    <h3 id="alert002">Sua foto com uma camisa branca</h3>
+                    <button id="styletshirt">Selecionar imagem</button>
+                    <input type="file" id="imagetshirt">
+                    <h3 id="alert003">Sua foto com seu documento na mao</h3>
+                    <button id="styledocument">Selecionar imagem</button>
+                    <input type="file" id="imagedocument"> <br>
+                    <button id="registerfinally">Finalizar Registro</button>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
