@@ -33,7 +33,7 @@
                     <input type="text" id="usernamelogin" placeholder="Nome">
                     <input type="password" id="passwordlogin" placeholder="Senha"><br>
                     <button id="entrarlogin">Entrar</button>
-                    <p id="registrobutton">Não tem uma conta?</p>
+                    <p id="registrobutton" onclick="registerPanel()">Não tem uma conta?</p>
                 </blockquote>
             </div>
             <div id="painel2">
@@ -45,24 +45,25 @@
             </div>
             <div id="painel3">
                 <blockquote id="bloco3">
+                    <h3 id="catch"></h3>
                     <h3 id="titleregister">Registre-se aqui</h3>
                     <input type="text" id="usernameregister" placeholder="Nome completo">
                     <input type="email" id="emailregister" placeholder="Email">
-                    <input type="text" id="cpfregister" placeholder="CPF" onblur="formataCPF(this)">
-                    <input type="text" id="cepregister" placeholder="CEP" onblur="formataCep(this)">
+                    <input type="text" id="cpfregister" placeholder="CPF" maxlength="16" onblur="formataCPF(this)">
+                    <input type="text" id="cepregister" placeholder="CEP" maxlength="10" onblur="formataCep(this)">
                     <input type="text" id="enderegister" placeholder="Endereço">
                     <input type="password" id="passwordregister" placeholder="Senha">
                     <input type="password" id="passwordverify" placeholder="Confirme sua senha"><br>
                     <h3 id="alert001">Comprovante de Residência</h3>
-                    <button id="styleresidencia">Selecionar imagem</button> 
+                    <button id="styleresidencia" onclick="document.getElementById('imageresidencia').click()">Selecionar imagem</button> 
                     <input type="file" id="imageresidencia">
                     <h3 id="alert002">Sua foto com uma camisa branca</h3>
-                    <button id="styletshirt">Selecionar imagem</button>
+                    <button id="styletshirt" onclick="document.getElementById('imagetshirt').click()">Selecionar imagem</button>
                     <input type="file" id="imagetshirt">
                     <h3 id="alert003">Sua foto com seu documento na mao</h3>
-                    <button id="styledocument">Selecionar imagem</button>
+                    <button id="styledocument" onclick="document.getElementById('imagedocument').click()">Selecionar imagem</button>
                     <input type="file" id="imagedocument"> <br>
-                    <button id="registerfinally">Finalizar Registro</button>
+                    <button id="registerfinally" onclick="registerNewuser()">Finalizar Registro</button>
                 </blockquote>
             </div>
         </div>
