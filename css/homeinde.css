@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+body{
+    background-color: rgba(46, 77, 87, 0.877);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+* img{
+    width: 210px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}* h3{
+    font-family: 'Anek Latin', sans-serif;
+}
+
+
+nav{
+    display: flex;
+    background-color: rgba(60, 128, 105, 0.514);
+    box-shadow: 0 0 1em black;
+
+}nav ul{
+    display: flex;
+    height: 75px;
+}nav li{
+    display: flex;
+    margin-left: 35px;
+    margin-right: 85px;
+    font-size: 35px;
+}nav li a{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Contrail One', cursive;
+}
+article{
+    animation: init 2s ease-in-out normal;
+}
+#navtransity0{
+    color: rgb(0, 102, 128);
+}#propagand000{
+    display: inline;
+    margin: auto;
+    margin-left: 0;
+    justify-items: center;
+    justify-content: center;
+}#cartoonterno{
+    width: 120px;
+    height: auto;
+}
+#bloco000{
+    margin: auto;
+    margin-top: 45px;
+    box-shadow: 0 0 5px black;
+    font-weight: bold;
+    font-size: 25px;
+    width: 950px;
+    height: 400px;
+    text-align: center;
+}#bloco000 h3{
+    margin-top: 35px;
+}#propagand001{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    justify-items: center;
+}
+#bloco001{
+    margin-top: 45px;
+    box-shadow: 0 0 1em black;
+    font-weight: bold;
+    font-size: 25px;
+    width: 430px;
+    height: 350;
+    text-align: center;
+}
+@media screen and (max-width: 612px){
+    nav ul{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 975px){
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+        height: auto;
+    }
+}@media screen and (max-width: 968px){
+    #bloco000{
+        width: 680px;
+    }
+}
+@media screen and (max-width: 750px){
+    nav{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 940px){
+    #bloco001{
+        width: 380px;
+        height: 460px;
+    }#bloco001 h3{
+        font-size: 25px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+}@media screen and (max-width: 825px){
+    #bloco000{
+        width: 580px;
+        height: 485px;
+    }#bloco001{
+        width: 340px;
+        height: 485px;
+    }#bloco001 h3{
+        font-size: 25px;
+    }
+}@media screen and (max-width: 745px){
+    #bloco000{
+        width: 500px;
+        height: 510px;
+    }#bloco000 h3{
+        font-size: 35px;
+    }
+    #bloco001{
+        width: 300px;
+        height: 510px;
+    }#bloco001 h3{
+        font-size: 25px;
+    }
+}@media screen and (max-width: 660px){
+    #bloco000{
+        width: 400px;
+        height: 740px;
+    }#bloco001{
+        width: 270px;
+        height: 565px;
+    }#bloco001 h3{
+        font-size: 25px;
+    }
+}@media screen and (max-width: 600px){
+    #bloco000{
+        width: 420px;
+        height: 780px;
+        margin-right: 15px;
+        margin: auto;
+    }#bloco001{
+        width: 220px;
+        height: 585px;
+    }#bloco001 h3{
+        font-size: 25px;
+    }
+}@media screen and (max-width: 467px){
+    #propagand000{
+        margin: auto;
+        margin-left: 125px;
+        flex-direction: column;
+    }#bloco001{
+        height: 600px;
+    }
+}
+@keyframes init {
+    0%{
+        margin-left: -2200px;
+    }
+}

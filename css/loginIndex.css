@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
-
+body{
+    background-color: rgba(46, 77, 87, 0.877);
+}
 
 *{
     margin: 0;
@@ -57,7 +59,7 @@ nav{
     width: 300px;
     height: 350px;
     box-shadow: -1em 0em 1em 0 black;
-    border-right: 2px solid rgb(114, 111, 111);
+    border-right: 2px solid rgb(0, 0, 0);
 }#bloco2{
     margin: auto;
     margin-top: 25px;
@@ -65,7 +67,7 @@ nav{
     width: 300px;
     height: 350px;
     box-shadow: 1em 0em 1em 0 black;
-    border-left: 2px solid rgb(114, 111, 111);
+    border-left: 2px solid rgb(0, 0, 0);
     background-color: rgba(36, 35, 36, 0.397);
 }#bloco2 h3{
     font-family: 'Anek Latin', sans-serif;
@@ -84,10 +86,27 @@ nav{
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 15px;
-}#painel input[type='password']{
+    border: 1px solid black;
+    padding-left: 5px;
+}#painel3 input[type='text'],#painel3 input[type='password'],#painel3 input[type='email']{
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    -webkit-appearance: none;
+    border: 1px solid black;
+    padding-left: 5px;
+    
+}#separate input[type='text'],#separate input[type='password']{
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    -webkit-appearance: none;
+    border: 1px solid black;
+    padding-left: 5px;
+}
+#painel input[type='password']{
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 15px; 
+    border: 1px solid black;
 }#entrarlogin{
     width: 120px;
     height: auto;
@@ -95,15 +114,14 @@ nav{
     background-color: rgba(240, 255, 255, 0);
     margin-right: 118px;
     margin-top: 13px;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    border: 0;
     box-shadow: 2px 2px 2px 3px black;
     border-left: 0;
     border-right: 0;
     transition-duration: 800ms;
+    border-radius: 30px 30px;
 }#entrarlogin:hover{
-    box-shadow: 3px 3px 3px 4px gray;
-    border-radius: 5%;
+    box-shadow: 2px 2px 2px 2px rgb(58, 57, 57);
     cursor: pointer;
 }#registrobutton{
     margin-right: 50px;
@@ -197,7 +215,7 @@ nav{
     border-radius: 20px/30px;
     -moz-border-radius: 20px 30px;
     font-weight: bold;
-    background-color: rgba(71, 67, 67, 0.267);
+    background-color: rgba(71, 67, 67, 0.575);
     font-size: 20px;
     cursor: pointer;
     border: 0;
@@ -271,7 +289,7 @@ nav{
 }
 @keyframes welcome {
     0%{
-        margin-left: -1500px;
+        margin-left: -2200px;
     }
     
 }
